@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.1.4...v0.2.0)
+
+### 🚀 Enhancements
+
+- **TStartOption:** ⚠️  Rename `stepMs` to `tickMs` ([2285e13](https://github.com/dsfx3d/use-countdown-worker/commit/2285e13))
+
+#### ⚠️ Breaking Changes
+
+- **TStartOption:** ⚠️  Rename `stepMs` to `tickMs` ([2285e13](https://github.com/dsfx3d/use-countdown-worker/commit/2285e13))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.4
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.1.3...v0.1.4)
