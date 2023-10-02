@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v1.0.1...v1.1.0)
+
+### 🚀 Enhancements
+
+- Add callback for countdown done ([155d1eb](https://github.com/dsfx3d/use-countdown-worker/commit/155d1eb))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.2.1...v1.0.1)
