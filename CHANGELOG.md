@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.3
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.1.2...v0.1.3)
+
+### 🏡 Chore
+
+- Trim trivial content from readme ([a876372](https://github.com/dsfx3d/use-countdown-worker/commit/a876372))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.2
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.1.1...v0.1.2)
