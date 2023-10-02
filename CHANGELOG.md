@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.2.1...v1.0.1)
+
+### 🏡 Chore
+
+- Fix semantic versioning ([0ae5220](https://github.com/dsfx3d/use-countdown-worker/commit/0ae5220))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.2.1
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.2.0...v0.2.1)
