@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.2.0...v0.2.1)
+
+### 🚀 Enhancements
+
+- Expose ability to set ETA ([4ac6abd](https://github.com/dsfx3d/use-countdown-worker/commit/4ac6abd))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.2.0
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v0.1.4...v0.2.0)
