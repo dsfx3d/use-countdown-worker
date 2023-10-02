@@ -4,6 +4,7 @@ import {useState} from "react";
 type TOptions = {
   onTick?: (eta: number) => void;
   onStopped?: () => void;
+  onDone?: () => void;
 };
 
 type TStartOptions = {
@@ -34,6 +35,7 @@ export const useCountdown = (options?: TOptions) => {
         options?.onTick?.(next);
         if (next === 0) {
           stop(id);
+          options?.onDone?.();
         }
         return next;
       });

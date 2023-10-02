@@ -72,6 +72,7 @@ export default CountdownComponent;
   Available options:
   - `onTick`: A callback that gets called on every tick with the remaining time in milliseconds.
   - `onStopped`: A callback that gets called once the countdown stops.
+  - `onDone`: A callback that gets called once the countdown reaches 0 eta.
 
 - `start(etaMs: number, startOptions?: TStartOptions)`:
 
