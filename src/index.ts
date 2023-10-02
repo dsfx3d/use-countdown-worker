@@ -41,7 +41,12 @@ export const useCountdown = (options?: TOptions) => {
     setIntervalId(id);
   };
 
-  return {eta, start, stop: () => stop(intervalId)};
+  return {
+    eta,
+    setEta,
+    start,
+    stop: () => stop(intervalId),
+  };
 };
 
 const tick = (eta: number, step: number) => {
