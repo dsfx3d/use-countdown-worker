@@ -7,7 +7,7 @@ type TOptions = {
 };
 
 type TStartOptions = {
-  stepMs?: number;
+  tickMs?: number;
 };
 
 export const useCountdown = (options?: TOptions) => {
@@ -21,7 +21,7 @@ export const useCountdown = (options?: TOptions) => {
     }
   };
 
-  const start = (etaMs: number, {stepMs = 1000}: TStartOptions = {}) => {
+  const start = (etaMs: number, {tickMs = 1000}: TStartOptions = {}) => {
     stop(intervalId);
     if (etaMs <= 0) {
       options?.onStopped?.();
@@ -30,14 +30,14 @@ export const useCountdown = (options?: TOptions) => {
     setEta(etaMs);
     const id = setInterval(() => {
       setEta(eta => {
-        const next = tick(eta ?? etaMs, stepMs);
+        const next = tick(eta ?? etaMs, tickMs);
         options?.onTick?.(next);
         if (next === 0) {
           stop(id);
         }
         return next;
       });
-    }, stepMs);
+    }, tickMs);
     setIntervalId(id);
   };
 

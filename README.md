@@ -51,7 +51,7 @@ function CountdownComponent() {
   return (
     <div>
       <p>Time remaining: {eta}ms</p>
-      <button onClick={() => start(10000, { stepMs: 500 })}>Start 10 seconds Countdown with 500ms step</button>
+      <button onClick={() => start(10000, { tickMs: 500 })}>Start 10 seconds Countdown with 500ms tick</button>
       <button onClick={stop}>Stop</button>
     </div>
   );
@@ -78,7 +78,7 @@ export default CountdownComponent;
   Starts the countdown.
   - `etaMs`: Total countdown time in milliseconds.
   - `startOptions`: Optional configurations for the countdown.
-    - `stepMs`: Interval in milliseconds for the countdown to update. Default is `1000ms` (1 second).
+    - `tickMs`: Interval in milliseconds for the countdown to update. Default is `1000ms` (1 second).
 
 - `stop()`: Stops the countdown immediately.
 
