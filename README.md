@@ -82,13 +82,27 @@ export default CountdownComponent;
 
 - `stop()`: Stops the countdown immediately.
 
-## Development
+Alright, let's add a "Dependencies" section to your README to help users understand the external libraries this package relies on. Based on the provided `package.json`, you have one direct dependency and a peer dependency on `react`.
 
-- Clone this repository: `git clone dsfx3d/workspace`
-- Install latest LTS version of [Node.js](https://nodejs.org/en/)
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
-- Install dependencies using `pnpm install`
-- Run interactive tests using `pnpm dev`
+Here's how you can add the dependencies section to your README:
+
+## Dependencies
+
+This package relies on the following dependencies:
+
+### Direct Dependencies
+
+- [`worker-timers`](https://www.npmjs.com/package/worker-timers): `^7.0.76`
+
+  This library provides accurate intervals using web workers, ensuring that your countdown operates with precision even when the main JavaScript thread is occupied.
+
+### Peer Dependencies
+
+- [`react`](https://www.npmjs.com/package/react): `>=16.18.0`
+
+  The hook is built for React applications. Ensure that you have `react` installed in your project with a version of `16.18.0` or newer.
+
+When using this package, ensure you meet the peer dependency requirements. If you're starting a new project, it's recommended to install both this package and its peer dependencies to avoid potential compatibility issues.
 
 ## License
 
