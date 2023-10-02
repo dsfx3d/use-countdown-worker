@@ -1,0 +1,28 @@
+on:
+  workflow_dispatch
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: bun install
+        shell: bash
+
+      - uses: ./.github/actions/ci
+
+      - name: Semantic Release Dry Run
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          branches: main
+          dry_run: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

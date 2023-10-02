@@ -1,0 +1,14 @@
+name: CI
+description: Runs the Continuous Integration tasks
+runs:
+  using: composite
+  steps:
+    - run: bun run lint
+      shell: bash
+    - run: bun run test:types
+      shell: bash
+    - run: bun run build
+      shell: bash
+    - run: bun test --coverage
+      shell: bash
+    - uses: codecov/codecov-action@v3
