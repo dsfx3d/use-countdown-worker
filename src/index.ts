@@ -1,13 +1,13 @@
 import {clearInterval, setInterval} from "worker-timers";
 import {useState} from "react";
 
-type TOptions = {
+export type TOptions = {
   onTick?: (eta: number) => void;
   onStopped?: () => void;
   onDone?: () => void;
 };
 
-type TStartOptions = {
+export type TStartOptions = {
   tickMs?: number;
 };
 
