@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v1.1.1...v1.2.0)
+
+### 🚀 Enhancements
+
+- Add option to initialize ETA ([92c4b96](https://github.com/dsfx3d/use-countdown-worker/commit/92c4b96))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v1.1.1
 
 [compare changes](https://github.com/dsfx3d/use-countdown-worker/compare/v1.1.0...v1.1.1)
