@@ -2,6 +2,7 @@ import {clearInterval, setInterval} from "worker-timers";
 import {useState} from "react";
 
 export type TOptions = {
+  initialEta?: number;
   onTick?: (eta: number) => void;
   onStopped?: () => void;
   onDone?: () => void;
@@ -10,9 +11,15 @@ export type TOptions = {
 export type TStartOptions = {
   tickMs?: number;
 };
+export type TCountdown = {
+  eta: number;
+  setEta: (eta: number) => void;
+  start: (eta: number, options?: TStartOptions) => void;
+  stop: () => void;
+};
 
-export const useCountdown = (options?: TOptions) => {
-  const [eta, setEta] = useState<number>();
+export const useCountdown = (options?: TOptions): TCountdown => {
+  const [eta, setEta] = useState<number>(options?.initialEta ?? 0);
   const [intervalId, setIntervalId] = useState<number | undefined>();
   const stop = (intervalId?: number) => {
     if (intervalId) {
