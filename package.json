@@ -30,7 +30,7 @@
     "test:types": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
-    "worker-timers": "7.0.76"
+    "worker-timers": "7.1.8"
   },
   "peerDependencies": {
     "react": ">=16.18.0"
