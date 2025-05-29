@@ -38,7 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
-    "@types/node": "^20.8.0",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.2.24",
     "@vitest/coverage-v8": "^0.34.6",
     "changelogen": "^0.5.5",
