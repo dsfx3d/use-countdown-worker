@@ -11,4 +11,4 @@ runs:
       shell: bash
     - run: bun test --coverage
       shell: bash
-    - uses: codecov/codecov-action@v3
+    - uses: codecov/codecov-action@v5
