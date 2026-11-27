@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   worker-timers:
-    specifier: 8.0.21
-    version: 8.0.21
+    specifier: 8.0.36
+    version: 8.0.36
 
 devDependencies:
   '@commitlint/cli':
@@ -217,15 +217,15 @@ packages:
       '@babel/types': 7.23.0
     dev: true
 
-  /@babel/runtime@7.27.3:
-    resolution: {integrity: sha512-7EYtGezsdiDMyY80+65EzwiGmcJqpmcZCojSXaRgdrBaGtWTgDZKq69cPIVped6MkIM78cTQ2GOiEYjwOlG4xw==}
-    engines: {node: '>=6.9.0'}
-    dev: false
-
   /@babel/runtime@7.27.6:
     resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
     engines: {node: '>=6.9.0'}
     dev: true
+
+  /@babel/runtime@7.29.15:
+    resolution: {integrity: sha512-304gsbbGVmQc+cNGHzwHBlqepYdWLKj3VXCQBGt/EGcV7PUPfKI7kAUNW1FZEOCwlQiLvQjg1JEaAlRQ616h+Q==}
+    engines: {node: '>=6.9.0'}
+    dev: false
 
   /@babel/standalone@7.23.1:
     resolution: {integrity: sha512-a4muOYz1qUaSoybuUKwK90mRG4sf5rBeUbuzpuGLzG32ZDE/Y2YEebHDODFJN+BtyOKi19hrLfq2qbNyKMx0TA==}
@@ -1970,13 +1970,13 @@ packages:
       fill-range: 7.1.1
     dev: true
 
-  /broker-factory@3.1.6:
-    resolution: {integrity: sha512-yIQuvDXR1MzA758Y1YUonVdjL0ZDg8HIG4Eq5rzYcHSV6xxqB5JL2mkjnJY+4IjXyY7OhPaLejwleOOw6sABhQ==}
+  /broker-factory@3.1.16:
+    resolution: {integrity: sha512-Zh4KL+7jykwXi9j9JB4v2l8GZlYZuiUvyHVQFseP1m0yYXVUws9b3d2n6ky4KdPZubG6a7tnrE6LCQRr78jrcw==}
     dependencies:
-      '@babel/runtime': 7.27.3
-      fast-unique-numbers: 9.0.21
-      tslib: 2.8.1
-      worker-factory: 7.0.42
+      '@babel/runtime': 7.29.15
+      fast-unique-numbers: 9.0.27
+      tslib: 2.9.1
+      worker-factory: 7.0.51
     dev: false
 
   /browserslist@4.22.1:
@@ -3447,12 +3447,12 @@ packages:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
 
-  /fast-unique-numbers@9.0.21:
-    resolution: {integrity: sha512-t7gFR4sftDWVSBCL65ByTxR5Tf6c1hLPCoNZL3K9Jq5zBb3FY8jGffSvRdY6nVgm8reGq8Ii39Mm6YePX7uKAA==}
+  /fast-unique-numbers@9.0.27:
+    resolution: {integrity: sha512-nDA9ADeINN8SA2u2wCtU+siWFTTDqQR37XvgPIDDmboWQeExz7X0mImxuaN+kJddliIqy2FpVRmnvRZ+j8i1/A==}
     engines: {node: '>=18.2.0'}
     dependencies:
-      '@babel/runtime': 7.27.3
-      tslib: 2.8.1
+      '@babel/runtime': 7.29.15
+      tslib: 2.9.1
     dev: false
 
   /fastq@1.15.0:
@@ -5655,6 +5655,12 @@ packages:
   /tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
     requiresBuild: true
+    dev: true
+    optional: true
+
+  /tslib@2.9.1:
+    resolution: {integrity: sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA==}
+    dev: false
 
   /tsutils@3.21.0(typescript@5.8.3):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -6098,39 +6104,39 @@ packages:
       stackback: 0.0.2
     dev: true
 
-  /worker-factory@7.0.42:
-    resolution: {integrity: sha512-xQhdcRafZFHGxX+EpJqXsY1X5czW95XN7aXP+0cmy6RMX/8+r78znLyJB7DafPTIFdyNk09J6wstW0RreIlIHw==}
+  /worker-factory@7.0.51:
+    resolution: {integrity: sha512-ToDnFkQyWfMzmZX2+bFd5CkjIDjT3i3/JUey1iBP/PNnhGn51eMHrN+iOWzgsKUbBruU+HMNbHll0Jyjfjqaaw==}
     dependencies:
-      '@babel/runtime': 7.27.3
-      fast-unique-numbers: 9.0.21
-      tslib: 2.8.1
+      '@babel/runtime': 7.29.15
+      fast-unique-numbers: 9.0.27
+      tslib: 2.9.1
     dev: false
 
-  /worker-timers-broker@8.0.7:
-    resolution: {integrity: sha512-l89u41E9HnlmVmv9YiU+DrG02jEOMXuyZtNSIhI9gFQjfaY+d3b4pYeLJyu+eTTiF05WA8qkncvce7RY0YWOBQ==}
+  /worker-timers-broker@8.0.19:
+    resolution: {integrity: sha512-gIdrjG+UAGi2vGYFRWcZyEpDIoaz7b6mBNg96ogWL8eyBUP+EyezWMVQO/j7SHEDDy4roMbPNww00jxjxrTRHg==}
     dependencies:
-      '@babel/runtime': 7.27.3
-      broker-factory: 3.1.6
-      fast-unique-numbers: 9.0.21
-      tslib: 2.8.1
-      worker-timers-worker: 9.0.7
+      '@babel/runtime': 7.29.15
+      broker-factory: 3.1.16
+      fast-unique-numbers: 9.0.27
+      tslib: 2.9.1
+      worker-timers-worker: 9.0.16
     dev: false
 
-  /worker-timers-worker@9.0.7:
-    resolution: {integrity: sha512-NyR5XeRTF8SJStwEuDt5BOTVdieqOEIsDVGECV/KVnx3JNbEKXMbh/jtypNwuN2PGKvSNIozYCWu0Yok3lOvQQ==}
+  /worker-timers-worker@9.0.16:
+    resolution: {integrity: sha512-GtU1/uIaR4+4L4vEFqRYWMeSU+Lxok5u8Ie6vnB7R9uOxm2tKajG19CFqNKXx46qSN654BgbYSZiOLY1rIg9yQ==}
     dependencies:
-      '@babel/runtime': 7.27.3
-      tslib: 2.8.1
-      worker-factory: 7.0.42
+      '@babel/runtime': 7.29.15
+      tslib: 2.9.1
+      worker-factory: 7.0.51
     dev: false
 
-  /worker-timers@8.0.21:
-    resolution: {integrity: sha512-L/QXdrRJQta6FL0STOa+ZwRwl99IboSsBUSPtuRSFIn2gwrDD8tOrjH7rLXGN8VbPFO/9U8vPS5yOX11iwvEdA==}
+  /worker-timers@8.0.36:
+    resolution: {integrity: sha512-wItYRUt2Mgkhiy2usQ72CdhPhItozKVJpD5AlZLi6kOYg1FkwuDwoXeo4r8saFqBUfIXVQ+rYBVzVOJ2WKfRtA==}
     dependencies:
-      '@babel/runtime': 7.27.3
-      tslib: 2.8.1
-      worker-timers-broker: 8.0.7
-      worker-timers-worker: 9.0.7
+      '@babel/runtime': 7.29.15
+      tslib: 2.9.1
+      worker-timers-broker: 8.0.19
+      worker-timers-worker: 9.0.16
     dev: false
 
   /wrap-ansi@7.0.0:
